@@ -3,3 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 1920px;
+    height: 1748px;
+}
+
+.container {
+    max-width: 1500px;
+    margin-inline: auto;
+}
+
+nav {
+    background-color: #FF6900;
+    height: 4rem;
+}
+
+.box {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .gender {
+    color: white;
+    font-size: 1.5em;
+} */
+
+.gender > * {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding-inline: .7rem;
+}
+
+.logo {
+    height: 3em;
+}
+
+.icons > * {
+    font-size: 1.5em;
+    color: white;
+    padding-inline: .7rem;
+}
+
