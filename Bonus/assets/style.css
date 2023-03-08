@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 8rem;
+    font-family: 'Whitney', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav {
+    background-color: #FF6900;
+    height: 6rem;
+    width: 100%;
+
+}
+
+.box {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .gender {
+    color: white;
+    font-size: 1.5em;
+} */
+
+.gender > * {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding-inline: .7rem;
+}
+
+.logo {
+    height: 3em;
+}
+
+.icons > * {
+    font-size: 1.5em;
+    color: white;
+    padding-inline: .7rem;
+}
+
+/* main */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-inline: 12px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    position: relative;
+    width: calc( 100% / 3 - 24px);
+}  
+
+.prefered {
+    font-size: 1.7rem;
+    background-color: white;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.card img {
+    height: 100%;
+}
+
+.discount {
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 0;
+}
+
+.sus {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 5rem;
+}
+
+.brand {
+    font-size: 1rem;
+}
+
+.model {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.price {
+    color: red;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.prc-discount{
+    color: grey;
+    text-decoration: line-through;
+}
+
+/* footer */
+
+
+footer {
+    background-color: #1A1A1A;
+    /* height: 5rem; */
+}
+
+.boxf {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-links {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
+
+.social-links > i {
+    color: #1A1A1A;
+    background-color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
