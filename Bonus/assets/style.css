@@ -1,4 +1,4 @@
-a* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -76,18 +76,45 @@ nav {
     width: calc( 100% / 3 - 24px);
 }  
 
+.card img:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
 .prefered {
     font-size: 1.7rem;
     background-color: white;
     padding: 1rem;
     position: absolute;
+    z-index: 3;
     right: 0;
     top: 15px;
 }
 
-.card img {
-    height: 100%;
+.prefered:hover {
+    cursor: pointer;
+    color: red;
 }
+
+
+.image1 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.image2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.photo:hover .image2 {
+    z-index: 2;
+}
+
 
 .discount {
     background-color: red;
@@ -98,6 +125,7 @@ nav {
     position: absolute;
     bottom: 9rem;
     left: 0;
+    z-index: 2;
 }
 
 .sus {
@@ -109,6 +137,7 @@ nav {
     position: absolute;
     bottom: 9rem;
     left: 5rem;
+    z-index: 2;
 }
 
 .brand {
