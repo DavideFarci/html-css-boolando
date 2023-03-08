@@ -6,6 +6,7 @@
 
 body {
     margin-top: 8rem;
+    font-family: 'Whitney', sans-serif;
 }
 
 .container {
@@ -13,18 +14,23 @@ body {
     margin-inline: auto;
 }
 
-nav {
-    background-color: #FF6900;
-    height: 4rem;
-    width: 100%;
+header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
+}
+
+nav {
+    background-color: #FF6900;
+    height: 6rem;
+    width: 100%;
+
 }
 
 .box {
-    height: 4rem;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +64,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* width: calc( 100% / 3 - 20px); */
 }
 
 .card {
@@ -67,14 +72,64 @@ nav {
     display: flex;
     flex-direction: column;
     flex: 0 1 auto;
-}    
+    position: relative;
+    width: calc( 100% / 3 - 24px);
+}  
+
+.prefered {
+    font-size: 1.7rem;
+    background-color: white;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
 
 .card img {
     height: 100%;
 }
 
-span {
-    font-size: 1.2rem;
+.discount {
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 0;
+}
+
+.sus {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 7.5rem;
+}
+
+.brand {
+    font-size: 1.5rem;
+}
+
+.model {
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.price {
+    color: red;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.prc-discount{
+    color: grey;
+    text-decoration: line-through;
 }
 
 /* footer */
