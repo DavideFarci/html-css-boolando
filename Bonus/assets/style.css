@@ -1,4 +1,4 @@
-* {
+a* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,10 +36,6 @@ nav {
     align-items: center;
 }
 
-/* .gender {
-    color: white;
-    font-size: 1.5em;
-} */
 
 .gender > * {
     text-decoration: none;
@@ -50,6 +46,10 @@ nav {
 
 .logo {
     height: 3em;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .icons > * {
@@ -169,3 +169,7 @@ h4 {
     border-radius: 10px;
 }
 
+.social-links > i:hover {
+    cursor: pointer;
+    text-shadow: 2px white;
+}
